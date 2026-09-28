@@ -30,7 +30,7 @@ heroLabel: WHAT IS IT?
 
 # What Is Flipcord?
 
-![What Is Flipcord?](/images/flipcord-org-en.webp)
+![What Is Flipcord?](../images/flipcord-org-en.webp)
 
 **Flipcord is a name for hand-manipulation objects designed to move through the fingers — flipping, folding, rotating, turning and flowing from one hand to another.**
 
