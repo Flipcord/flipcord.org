@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{ .Description }}">
+
+    <title>{{ .Title }} | Flipcord</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         PAGEFIND
+         ===================================================== -->
+
+    <link
+        href="/pagefind/pagefind-component-ui.css"
+        rel="stylesheet"
+    >
+
+    <script
+        src="/pagefind/pagefind-component-ui.js"
+        type="module"
+    ></script>
+
+
+    <!-- =====================================================
+         FLIPCORD CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="/css/flipcord.css"
+    >
+
+
+    {{ block "head" . }}{{ end }}
+
+</head>
+
+
+<body data-pf-theme="dark">
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+
+        <!-- LOGO -->
+
+        <a
+            class="site-logo"
+            href="{{ .Site.Home.RelPermalink }}"
+        >
+            FLIPCORD
+        </a>
+
+
+        <!-- SEARCH -->
+
+        <pagefind-modal-trigger
+            class="flipcord-search"
+            hide-shortcut
+        ></pagefind-modal-trigger>
+
+
+        <!-- LANGUAGE SWITCHER -->
+
+        <nav
+            class="language-switcher"
+            aria-label="Language"
+        >
+
+            {{ range .AllTranslations }}
+
+                <a
+                    href="{{ .RelPermalink }}"
+                    class="{{ if eq .Language.Lang $.Language.Lang }}active{{ end }}"
+                >
+                    {{ .Language.Lang | upper }}
+                </a>
+
+            {{ end }}
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         PAGEFIND MODAL
+         ===================================================== -->
+
+    <pagefind-modal></pagefind-modal>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main
+        class="site-main"
+        data-pagefind-body
+    >
+
+        {{ block "main" . }}{{ end }}
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-line"></div>
+
+        <p>
+            FLIPCORD
+        </p>
+
+        <span>
+            Movement is the idea.
+        </span>
+
+    </footer>
+
+
+</body>
+
+</html>

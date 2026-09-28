@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section class="hero">
+
+    {{ with .Params.heroLabel }}
+    <div class="hero-label">
+        {{ . }}
+    </div>
+    {{ end }}
+
+    <div class="hero-content">
+
+        {{ .Content }}
+
+    </div>
+
+</section>
+
+{{ end }}

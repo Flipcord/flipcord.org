@@ -1,0 +1,17 @@
+# Hugo generated files
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Pagefind generated files
+/public/pagefind/
+
+# Node
+/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Obsidian
+.obsidian/

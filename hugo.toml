@@ -1,0 +1,45 @@
+baseURL = 'https://flipcord.org/'
+title = 'Flipcord'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+enableRobotsTXT = true
+
+[languages]
+
+[languages.en]
+label = 'English'
+locale = 'en-US'
+contentDir = 'content/en'
+weight = 1
+
+[languages.es]
+label = 'Español'
+locale = 'es'
+contentDir = 'content/es'
+weight = 2
+
+[languages.pt]
+label = 'Português'
+locale = 'pt-PT'
+contentDir = 'content/pt'
+weight = 3
+
+[languages.de]
+label = 'Deutsch'
+locale = 'de'
+contentDir = 'content/de'
+weight = 4
+
+[languages.uk]
+label = 'Українська'
+locale = 'uk'
+contentDir = 'content/uk'
+weight = 5
+
+[languages.ru]
+label = 'Русский'
+locale = 'ru'
+contentDir = 'content/ru'
+weight = 6
