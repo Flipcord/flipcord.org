@@ -59,4 +59,4 @@ Son cuestiones que requieren exploración e investigación: **no constituyen afi
 **El movimiento es la idea.**
 
 **Alt-text:**  
-`Flipcord articulado de madera formado por placas flexibles conectadas entre sí, presentado como un objeto de manipulación manual.`
+Flipcord articulado de madera formado por placas flexibles conectadas entre sí, presentado como un objeto de manipulación manual.

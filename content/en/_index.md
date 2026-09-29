@@ -59,7 +59,7 @@ These are questions for exploration and research — **not medical claims about 
 **Movement is the idea.**
 
 **Alt-text:**   
-`Articulated wooden Flipcord made of connected flexible plates, shown as a hand-manipulation object.`
+Articulated wooden Flipcord made of connected flexible plates, shown as a hand-manipulation object.
 
 
 

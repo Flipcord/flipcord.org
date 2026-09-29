@@ -59,6 +59,6 @@ Dies sind Fragen, die weiterer Erforschung und Untersuchung bedürfen — **kein
 **Bewegung ist die Idee.**
 
 **Alt-text:**  
-`Gelenkiger Flipcord aus Holz, bestehend aus miteinander verbundenen flexiblen Platten, als Objekt zur manuellen Manipulation dargestellt.`
+Gelenkiger Flipcord aus Holz, bestehend aus miteinander verbundenen flexiblen Platten, als Objekt zur manuellen Manipulation dargestellt.
 
 

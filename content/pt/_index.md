@@ -58,4 +58,4 @@ São questões que requerem exploração e investigação — **não constituem 
 **O movimento é a ideia.**
 
 **Alt-text:**  
-`Flipcord articulado de madeira, composto por placas flexíveis interligadas, apresentado como um objeto de manipulação manual.`
+Flipcord articulado de madeira, composto por placas flexíveis interligadas, apresentado como um objeto de manipulação manual.
