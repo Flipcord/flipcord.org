@@ -7,25 +7,9 @@ sitemap:
   priority: 1
   changefreq: monthly
 heroLabel: ЧТО ЭТО?
+termDescription: >-
+  Название для предметов ручной манипуляции, созданных для движения между пальцами с помощью таких движений, как переворачивание, складывание, вращение и передача из одной руки в другую.
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://flipcord.org/ru/",
-  "url": "https://flipcord.org/ru/",
-  "name": "Что такое Flipcord?",
-  "description": "Flipcord — это название для предметов ручной манипуляции, созданных для движения между пальцами.",
-  "inLanguage": "ru",
-  "mainEntity": {
-    "@type": "DefinedTerm",
-    "@id": "https://flipcord.org/ru/#flipcord",
-    "name": "Flipcord",
-    "description": "Название для предметов ручной манипуляции, созданных для движения между пальцами с помощью таких движений, как переворачивание, складывание, вращение и передача из одной руки в другую."
-  }
-}
-</script>
 
 # Что такое Flipcord?
 
@@ -59,4 +43,3 @@ Flipcord не обязательно имеет определённую фор�
 
 **Alt-text:**  
 Шарнирный деревянный Flipcord, состоящий из соединённых гибких пластин и предназначенный для ручной манипуляции.
-

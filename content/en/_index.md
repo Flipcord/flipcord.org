@@ -7,26 +7,9 @@ sitemap:
   priority: 1
   changefreq: monthly
 heroLabel: WHAT IS IT?
+termDescription: >-
+  A name for hand-manipulation objects designed to move through the fingers, including flipping, folding, rotating, turning and flowing from one hand to another.
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://flipcord.org/en/",
-  "url": "https://flipcord.org/en/",
-  "name": "What Is Flipcord?",
-  "description": "Flipcord is a name for hand-manipulation objects designed to move through the fingers.",
-  "inLanguage": "en-US",
-  "mainEntity": {
-    "@type": "DefinedTerm",
-    "@id": "https://flipcord.org/en/#flipcord",
-    "name": "Flipcord",
-    "description": "A name for hand-manipulation objects designed to move through the fingers, including flipping, folding, rotating, turning and flowing from one hand to another."
-  }
-}
-</script>
-
 
 # What Is Flipcord?
 
@@ -60,6 +43,3 @@ These are questions for exploration and research — **not medical claims about 
 
 **Alt-text:**   
 Articulated wooden Flipcord made of connected flexible plates, shown as a hand-manipulation object.
-
-
-

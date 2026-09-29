@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Language.Lang }}">
+<html lang="{{ .Language.Locale | default .Language.Lang }}">
 
 <head>
 
@@ -7,9 +7,40 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="{{ .Description }}">
-
-    <title>{{ .Title }} | Flipcord</title>
+    {{- $title := .Title -}}
+    {{- if not $title -}}{{ $title = .Site.Title }}{{ end -}}
+    {{- $description := .Description | default .Summary | plainify | htmlUnescape | htmlEscape -}}
+    {{- $canonical := .Permalink -}}
+    {{- $socialImage := printf "%simages/flipcord-org-%s.webp" .Site.BaseURL .Language.Lang -}}
+    <title>{{ $title }} | {{ .Site.Title }}</title>
+    {{ with $description }}<meta name="description" content="{{ . }}">{{ end }}
+    <link rel="canonical" href="{{ $canonical }}">
+    {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Locale | default .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    <link rel="alternate" hreflang="x-default" href="{{ printf "%sen/" .Site.BaseURL }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ $title }} | {{ .Site.Title }}">
+    {{ with $description }}<meta property="og:description" content="{{ . }}">{{ end }}
+    <meta property="og:url" content="{{ $canonical }}">
+    <meta property="og:locale" content="{{ .Language.Locale }}">
+    <meta property="og:image" content="{{ $socialImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }} | {{ .Site.Title }}">
+    {{ with $description }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+    <meta name="twitter:image" content="{{ $socialImage }}">
+    {{ $personID := printf "%s#oleksandr-kostyuk" .Site.BaseURL }}
+    {{ $person := dict "@type" "Person" "@id" $personID "name" "Oleksandr Kostyuk" "alternateName" (slice "Олександр Костюк" "Александр Костюк") "sameAs" (slice "https://www.instagram.com/oleksandr777/" "https://www.facebook.com/profile.php?id=1678639508&locale=uk_UA" "https://www.linkedin.com/in/oleksandr-kostyuk-0b388018/" "https://x.com/OleksandrKosty4" "https://memoryon.net/ru/pages/kostyuk-aleksandr-anatolevich?pageId=60deb95c0ff06f000ad206fb" "https://memoryon.net/en/pages/oleksandr-kostyuk?pageId=60c7497bf73673000a60d9d6") }}
+    {{ $personRef := dict "@id" $personID }}
+    {{ $page := dict "@type" "WebPage" "@id" $canonical "url" $canonical "name" $title "description" $description "inLanguage" .Language.Locale "author" $personRef "creator" $personRef }}
+    {{ with .Params.termDescription }}
+        {{ $termID := printf "%s#flipcord" $.Permalink }}
+        {{ $term := dict "@type" "DefinedTerm" "@id" $termID "name" "Flipcord" "description" . "creator" $personRef }}
+        {{ $page = merge $page (dict "mainEntity" $term) }}
+    {{ end }}
+    {{ $schema := dict "@context" "https://schema.org" "@graph" (slice $page $person) }}
+    <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
 
 
     <!-- =====================================================

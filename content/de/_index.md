@@ -7,26 +7,9 @@ sitemap:
   priority: 1
   changefreq: monthly
 heroLabel: WAS IST ES?
+termDescription: >-
+  Eine Bezeichnung für Objekte zur manuellen Manipulation, die sich durch die Finger bewegen lassen, unter anderem durch Drehen, Wenden, Falten und Weitergeben von einer Hand in die andere.
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://flipcord.org/de/",
-  "url": "https://flipcord.org/de/",
-  "name": "Was ist Flipcord?",
-  "description": "Flipcord ist eine Bezeichnung für Objekte zur manuellen Manipulation, die sich durch die Finger bewegen lassen.",
-  "inLanguage": "de",
-  "mainEntity": {
-    "@type": "DefinedTerm",
-    "@id": "https://flipcord.org/de/#flipcord",
-    "name": "Flipcord",
-    "description": "Eine Bezeichnung für Objekte zur manuellen Manipulation, die sich durch die Finger bewegen lassen, unter anderem durch Drehen, Wenden, Falten und Weitergeben von einer Hand in die andere."
-  }
-}
-</script>
-
 
 # Was ist Flipcord?
 
@@ -60,5 +43,3 @@ Dies sind Fragen, die weiterer Erforschung und Untersuchung bedürfen — **kein
 
 **Alt-text:**  
 Gelenkiger Flipcord aus Holz, bestehend aus miteinander verbundenen flexiblen Platten, als Objekt zur manuellen Manipulation dargestellt.
-
-

@@ -7,26 +7,10 @@ sitemap:
   priority: 1
   changefreq: monthly
 heroLabel: ¿QUÉ ES?
+termDescription: >-
+  Un nombre para objetos de manipulación manual diseñados para moverse entre los dedos, mediante movimientos como girar, voltear, plegar, rotar y pasar de una mano a otra.
 ---
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://flipcord.org/es/",
-  "url": "https://flipcord.org/es/",
-  "name": "¿Qué es Flipcord?",
-  "description": "Flipcord es un nombre para objetos de manipulación manual diseñados para moverse entre los dedos.",
-  "inLanguage": "es",
-  "mainEntity": {
-    "@type": "DefinedTerm",
-    "@id": "https://flipcord.org/es/#flipcord",
-    "name": "Flipcord",
-    "description": "Un nombre para objetos de manipulación manual diseñados para moverse entre los dedos, mediante movimientos como girar, voltear, plegar, rotar y pasar de una mano a otra."
-  }
-}
-</script>
 
 # ¿Qué es Flipcord?
 
